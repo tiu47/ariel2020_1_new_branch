@@ -50,6 +50,13 @@
 
 
 
+	<link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css" />
+	<script src="https://wowjs.uk/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+
 
 
 	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/js/splide-2.4.21/dist/css/splide-core.min.css'); ?>" type="text/css" />
@@ -357,7 +364,7 @@
 										 <?php echo get_bloginfo() ?>
 									-->
 
-							<article class="col-6  col-md-4  px-3 px-sm-3 px-md-3 slider-id-<?php echo get_post_meta(get_the_ID(), "anchorid", true) ?>" onclick="triggerPopupSlide('slider-id-<?php echo get_post_meta(get_the_ID(), "anchorid", true) ?>')" data-position="<?php echo get_post_meta(get_the_ID(), 'position', true); ?>" id="<?php echo get_post_meta(get_the_ID(), 'anchorid', true); ?>">
+							<article class="col-6  col-md-4  px-3 px-sm-3 px-md-3   wow fadeInUp slider-id-<?php echo get_post_meta(get_the_ID(), "anchorid", true) ?>" onclick="triggerPopupSlide('slider-id-<?php echo get_post_meta(get_the_ID(), "anchorid", true) ?>')" data-position="<?php echo get_post_meta(get_the_ID(), 'position', true); ?>" id="<?php echo get_post_meta(get_the_ID(), 'anchorid', true); ?>">
 								<!-- <h3><?php the_title(); ?> </h3> -->
 								<div class="front-image"><?php the_post_thumbnail(); ?> </div>
 
@@ -416,6 +423,8 @@
 		</div>
 	</div>
 	<!-- Works -->
+
+
 
 
 
