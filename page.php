@@ -56,8 +56,7 @@
 
 
 	<!-- or the reference on CDN -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
- -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
 
@@ -150,10 +149,10 @@
 
 
 
-				<?php echo do_shortcode('[ariel-slider foo="98,8"]'); ?>
+		<?php echo do_shortcode('[ariel-slider foo="98,8"]'); ?>
 
 
-		<div class="row  justify-content-center align-items-center pt-5 pt-lg-0" style="height: 100%;">
+		<div class="row  justify-content-center align-items-center pt-5 pt-lg-0 px-4" style="height: 100%;">
 			<div class="col  pt-4 pt-lg-0">
 				<div class="container-fluid intro section ">
 					<div class="" id="Bio">
@@ -171,13 +170,13 @@
 											SEO where part of my responsibility.
 										</p>
 
-										<p>I worked in differents agencies such as: iconosur.com & Beapp.net, ID4You and many others in Argentina and abroad.</p>
+										<!-- <p>I worked in differents agencies such as: iconosur.com & Beapp.net, ID4You and many others in Argentina and abroad.</p> -->
 
-										<p>
+										<!-- <p>
 											Latley to expand my knolege I have programming <a href="https://www.arduino.cc/" class="" target="_blank" title="Arduino">Arduino <i class="demo-icon icon-link-ext"></i></a> projects, 3D Printing and
 											3d projects in Blender, PWA for timing rounds, exploring videogames making (Unity) my
 											own Drawing App or this very background (<a href="https://processing.org/" class="" target="_blank" title="Processing">Processing <i class="demo-icon icon-link-ext"></i></a>)
-										</p>
+										</p> -->
 
 									</div>
 								</article>
@@ -198,7 +197,7 @@
 										<h3>UX</h3>
 									</div>
 									<div class="col   border-top  ">
-										<ul class="pt-3">
+										<ul class="pt-3 pe-3">
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-philips')" title="Philips">Philips</a> </li>
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-banco')" title="Banco Promociones">Banco Promociones</a> </li>
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-PasionPorFutbol')" title="Futbol Transferencias">Futbol </a> </li>
@@ -218,7 +217,7 @@
 										<h3>UI</h3>
 									</div>
 									<div class="col  border-top  ">
-										<ul class="pt-3">
+										<ul class="pt-3 pe-3">
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-philips')" title="Philips">Philips</a> </li>
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-banco')" title="Banco Promociones">Banco Promociones</a> </li>
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-GrupoPosadas')" title="GrupoPosadas">GrupoPosadas</a> </li>
@@ -243,7 +242,7 @@
 										<h3 class="front">Front-end</h3>
 									</div>
 									<div class="col border-top">
-										<ul class="pt-3 ">
+										<ul class="pt-3 pe-3">
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-Urgente24')" title="JuntosBien">Urgente24</a> </li>
 											<li class="clearfix"> <a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-JuntosBien')" title="JuntosBien">JuntosBien</a> </li>
 											<li class="clearfix"><a href="#" onclick="$('.Works').slideto({highlight: false}); triggerPopupSlide('slider-id-Medley')" title="Medley">And many projects more...</a> </li>
@@ -261,7 +260,7 @@
 										<h3>Art</h3>
 									</div>
 									<div class="col border-top">
-										<ul class="pt-3">
+										<ul class="pt-3 pe-3">
 											<li class="clearfix"> <a href="https://dribbble.com/arielbarrios" target="_blank" title="Dribble">Dribble <i class="demo-icon icon-link-ext"></i></a> </li>
 											<li class="clearfix"><a href="https://www.instagram.com/thename_number/" target="_blank" title="Instagram">Instagram <i class="demo-icon icon-link-ext"></i></a> </li>
 											<li class="clearfix"> <a href="https://tiu47.tumblr.com/" target="_blank" title="title">My Daily Art <i class="demo-icon icon-link-ext"></i></a> </li>
@@ -280,12 +279,13 @@
 						<div class="row justify-content-center align-items-center about third-row ">
 							<div class="col-sm-12 col-md-8 pt-3 border-top esprow">
 								<div class="row">
-									<div class="col ms-0">
-										<div class="d-flex">
-											<p><a href="http://arielbarrios.com/arielbarrioscv.pdf" target="_blank" class="btn btn-primary btn-sm" title="Download my cv here">Download my CV here EN<i class="demo-icon icon-download"></i></a> <a href="http://arielbarrios.com/arielbarrios_cv_espanol.pdf" target="_blank" class="btn btn-primary btn-sm" title="Descarga mi cv aquí">Descarga mi CV aquí ES <i class="demo-icon icon-download"></i></a></p>
-										</div>
+									<div class="col col-12 col-md-11 text-center text-md-start ms-0">
+										<a href="http://arielbarrios.com/arielbarrioscv.pdf" target="_blank" class="btn btn-primary btn-sm me-2" title="Download my cv here">Download my CV here EN<i class="demo-icon icon-download"></i></a>
+										<a href="http://arielbarrios.com/arielbarrios_cv_espanol.pdf" target="_blank" class="btn btn-primary btn-sm" title="Descarga mi cv aquí">Descarga mi CV aquí ES <i class="demo-icon icon-download"></i></a>
+
+
 									</div>
-									<div class="col col-1 me-0 text-end">
+									<div class="col col-12 col-md-1  me-0 text-center text-md-end pt-4  pt-md-0">
 										<p>2021</p>
 									</div>
 								</div>
