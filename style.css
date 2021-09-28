@@ -577,7 +577,7 @@ transition:all .5s ease;}
     border:none;
     border-radius: 0.2rem;
     }
-.wpcf7-form p textarea{height: 130px;}
+.wpcf7-form p textarea{height: 130px;line-height: normal;}
 
 .wpcf7-form p input[type="submit"]{width:120px;text-align:center}
 .wpcf7-form p input[type="submit"]{background: rgb(144 88 7);}
