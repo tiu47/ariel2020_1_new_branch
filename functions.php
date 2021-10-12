@@ -5,7 +5,13 @@
 /**
  * Customizer additions.
  */
-require_once get_template_directory() . './customizer.php';
+// require_once get_template_directory() . './customizer.php';
+
+if (!defined("MY_THEME_DIR")) {
+    define("MY_THEME_DIR", trailingslashit(get_stylesheet_directory()));
+}
+
+  require_once MY_THEME_DIR.'./customizer.php';
 
 
 if (!function_exists('ariel2020_setup')) :
@@ -86,9 +92,7 @@ function ariel2020_onlyimages($the_content)
         $gatoarray = '';
 
         for ($j = 0; $j < count($matches); $j++) {
-
             for ($i = 0; $i < count($matches[$j]); $i++) {
-
                 $gatoarray  .= '<li class="splide__slide"> <span class="helper"></span>' . $matches[$j][$i] . '</li>';
             }
         }
@@ -100,8 +104,6 @@ function ariel2020_onlyimages($the_content)
     return  $gatoarray;
     // return  $gatoarray;
     // return  implode ( $matches );
-
-
 }
 
 
@@ -139,7 +141,8 @@ function ariel2020_onlyimages($the_content)
 
 
 
-function my_widget_place(){
+function my_widget_place()
+{
     register_sidebar(array(
         'name' => __('Front Sidebar', 'yourtheme'),
         'id' => 'sidebar-1',
@@ -160,13 +163,14 @@ add_action('widgets_init', 'my_widget_place');
 
 
 
-function register_my_nav_bar(){
+function register_my_nav_bar()
+{
     register_nav_menu('my_new_menu', __('Our new menu'));
 }
 
 add_action('init', 'register_my_nav_bar');
 
-// 
+//
 // function curator($the_content-param){
 //
 //
@@ -183,7 +187,7 @@ add_action('init', 'register_my_nav_bar');
 add_action('wp_head', 'tutsplus_add_script_wp_head');
 function tutsplus_add_script_wp_head()
 {
-?>
+    ?>
     <script>
         console.log("I'm an inline script tag added to the header.");
     </script>

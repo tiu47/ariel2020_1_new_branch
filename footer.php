@@ -1,24 +1,27 @@
 <!--  Contactfooter -->
-<div class="container footer section Contact" id="Contact">
+<div class="container footer section Contact pt-5  wow fadeInUp " id="Contact">
 	<div class="row row align-items-center">
-		<div class="col text-center">
-			<header>
+		<div class="col text-center pt-5">
+			<header class="pt-5">
 				<h2 class="pb-3">Contact</h2>
 			</header>
 			<?php
-			/* The 2nd Query (without global var) */
-			$query2 = new WP_Query(array('category_name' => 'contacto'));
+            /* The 2nd Query (without global var) */
+            $query2 = new WP_Query(array('category_name' => 'contacto'));
 
-			// The 2nd Loop
-			while ($query2->have_posts()) {
-				$query2->the_post();
-				// echo '<li>' . get_the_title( $query2->post->ID ) . '</li>';
-				the_content();
-			}
+            // The 2nd Loop
+            while ($query2->have_posts()) {
+                $query2->the_post();
+                // echo '<li>' . get_the_title( $query2->post->ID ) . '</li>';
+                the_content();
+            }
 
-			// Restore original Post Data
-			wp_reset_postdata();
-			?>
+            // Restore original Post Data
+            wp_reset_postdata();
+            ?>
+
+
+
 			<div class="pt-4">
 				<p class="fs-4">Others forms of contacts</p>
 				<nav>
@@ -36,8 +39,8 @@
 			<div class="copyright-text col-12 col-md-6">
 				<p>
 					<?php
-					// echo esc_html( get_theme_mod( 'set_copyright', __( 'Copyright X - All rights reserved' , 'fancy-lab' ) ) );
-					?>
+                    // echo esc_html( get_theme_mod( 'set_copyright', __( 'Copyright X - All rights reserved' , 'fancy-lab' ) ) );
+                    ?>
 				</p>
 			</div>
 		</div>

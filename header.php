@@ -29,15 +29,15 @@
 
 
 					<?php
-					/**
-					 * Displays the footer widget area.
-					 *
-					 * @package WordPress
-					 * @subpackage Twenty_Twenty_One
-					 * @since Twenty Twenty-One 1.0
-					 */
+                    /**
+                     * Displays the footer widget area.
+                     *
+                     * @package WordPress
+                     * @subpackage Twenty_Twenty_One
+                     * @since Twenty Twenty-One 1.0
+                     */
 
-					if (is_active_sidebar('sidebar-1')) : ?>
+                    if (is_active_sidebar('sidebar-1')) : ?>
 
 						<div style="background:red">
 							esto es widget
@@ -54,17 +54,17 @@
 
 
 					<?php
-					wp_nav_menu(
-						array(
-							'theme_location'  => 'my_new_menu',
-							'menu_class'      => 'menu-wrapper',
-							'container_class' => 'primary-menu-container',
-							'items_wrap'      => '<ul id="primary-menu-list"  style="background:red" class="%2$s">%3$s</ul>',
-							'fallback_cb'     => false,
+                    wp_nav_menu(
+                        array(
+                            'theme_location'  => 'my_new_menu',
+                            'menu_class'      => 'menu-wrapper',
+                            'container_class' => 'primary-menu-container',
+                            'items_wrap'      => '<ul id="primary-menu-list"  style="background:red" class="%2$s">%3$s</ul>',
+                            'fallback_cb'     => false,
 
-						)
-					);
-					?>
+                        )
+                    );
+                    ?>
 
 
 				</div>
