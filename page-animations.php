@@ -358,9 +358,9 @@
 	<!-- Works -->
 
 
-	<?php get_footer(); ?>
+ <?php //get_footer();?> 
 
-
+			<?php get_template_part('footer_animation'); ?>
 
 
 

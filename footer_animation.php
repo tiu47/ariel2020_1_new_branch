@@ -1,5 +1,5 @@
 <!--  Contactfooter -->
-<div class="container-fluid footer section Contact pt-5  wow fadeInUp panel red " id="Contact">
+<div class="container-fluid footer section Contact pt-5   panel red " id="Contact">
 	<div class="row row align-items-center">
 		<div class="col text-center pt-5">
 			<header class="pt-5">
